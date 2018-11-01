@@ -2,7 +2,7 @@ From ubuntu:16.04
 MAINTAINER david lexuszhi1990@gmail.com
 
 RUN apt update && apt install -y python3-pip
-RUN pip install --upgrade -i https://mirrors.aliyun.com/pypi/simple/ pip && pip install -i https://mirrors.aliyun.com/pypi/simple/ visdom
+RUN pip3 install --upgrade -i https://mirrors.aliyun.com/pypi/simple/ pip && pip install -i https://mirrors.aliyun.com/pypi/simple/ visdom
 
 # WORKDIR /app
 # EXPOSE 8080
