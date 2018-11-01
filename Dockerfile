@@ -1,8 +1,8 @@
 From ubuntu:16.04
 MAINTAINER david lexuszhi1990@gmail.com
 
-RUN apt install -y python3-pip && pip install --upgrade pip
-RUN pip install -i https://mirrors.aliyun.com/pypi/simple/ visdom
+RUN apt update && apt install -y python3-pip
+RUN pip install --upgrade -i https://mirrors.aliyun.com/pypi/simple/ pip && pip install -i https://mirrors.aliyun.com/pypi/simple/ visdom
 
 WORKDIR /app
 EXPOSE 8080
